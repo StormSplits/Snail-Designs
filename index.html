@@ -2,23 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     
     <!-- Primary Meta Tags -->
     <title>Snail Designs - Web Design & Development Agency</title>
     <meta name="title" content="Snail Designs - Web Design & Development Agency" />
     <meta name="description" content="Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies. Transform your digital presence with Snail Designs." />
-    <meta name="keywords" content="web design, web development, react development, nextjs, typescript, tailwind css, UI/UX design, responsive design, frontend development, snail designs" />
+    <meta name="keywords" content="web design, web development, react development, nextjs, typescript, tailwind css, UI/UX design, responsive design, frontend development, snail designs, web agency, digital agency" />
     <meta name="author" content="Snail Designs" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    
+    <!-- Mobile & Browser Optimization -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Snail Designs" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Snail Designs" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7014CC" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -26,58 +38,240 @@
     <meta property="og:title" content="Snail Designs - Web Design & Development Agency" />
     <meta property="og:description" content="Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies." />
     <meta property="og:image" content="https://snaildesigns.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Snail Designs - Web Design & Development Agency" />
     <meta property="og:site_name" content="Snail Designs" />
     <meta property="og:locale" content="en_US" />
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://snaildesigns.com/" />
-    <meta property="twitter:title" content="Snail Designs - Web Design & Development Agency" />
-    <meta property="twitter:description" content="Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies." />
-    <meta property="twitter:image" content="https://snaildesigns.com/twitter-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://snaildesigns.com/" />
+    <meta name="twitter:title" content="Snail Designs - Web Design & Development Agency" />
+    <meta name="twitter:description" content="Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies." />
+    <meta name="twitter:image" content="https://snaildesigns.com/twitter-image.jpg" />
     <meta name="twitter:creator" content="@snaildesigns" />
+    <meta name="twitter:site" content="@snaildesigns" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://snaildesigns.com/" />
     
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#7014CC" />
-    <meta name="msapplication-TileColor" content="#7014CC" />
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="en" href="https://snaildesigns.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://snaildesigns.com/" />
     
-    <!-- Preconnect to external domains -->
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#7014CC" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#7014CC" media="(prefers-color-scheme: light)" />
+    <meta name="msapplication-TileColor" content="#7014CC" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Preload critical fonts -->
+    <link rel="preload" as="font" type="font/otf" href="/Circular/CircularStd-Book.otf" crossorigin />
+    
+    <!-- Structured Data (JSON-LD) - Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://snaildesigns.com/#organization",
       "name": "Snail Designs",
       "url": "https://snaildesigns.com",
-      "logo": "https://snaildesigns.com/logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://snaildesigns.com/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://snaildesigns.com/og-image.jpg",
       "description": "Professional web design and development agency specializing in React, Next.js, and modern web technologies.",
+      "foundingDate": "2023",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lucknow",
         "addressRegion": "UP",
         "addressCountry": "IN"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "email": "hello@snaildesigns.com"
-      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "email": "hello@snaildesigns.com",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "Sales",
+          "email": "sales@snaildesigns.com"
+        }
+      ],
       "sameAs": [
         "https://twitter.com/snaildesigns",
         "https://linkedin.com/company/snaildesigns",
-        "https://github.com/snaildesigns"
+        "https://github.com/snaildesigns",
+        "https://instagram.com/snaildesigns"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://snaildesigns.com/#website",
+      "url": "https://snaildesigns.com",
+      "name": "Snail Designs",
+      "description": "Professional web design and development agency",
+      "publisher": {
+        "@id": "https://snaildesigns.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://snaildesigns.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://snaildesigns.com/#business",
+      "name": "Snail Designs",
+      "image": "https://snaildesigns.com/og-image.jpg",
+      "url": "https://snaildesigns.com",
+      "telephone": "+91-XXXXXXXXXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lucknow",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.8467",
+        "longitude": "80.9462"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://twitter.com/snaildesigns",
+        "https://linkedin.com/company/snaildesigns"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "50"
+      }
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - Services Offered -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Our Services",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "position": 1,
+          "name": "Web Design",
+          "description": "Custom website design with modern UI/UX principles",
+          "provider": { "@id": "https://snaildesigns.com/#organization" }
+        },
+        {
+          "@type": "Service",
+          "position": 2,
+          "name": "Web Development",
+          "description": "Full-stack web development using React, Next.js, and modern technologies",
+          "provider": { "@id": "https://snaildesigns.com/#organization" }
+        },
+        {
+          "@type": "Service",
+          "position": 3,
+          "name": "Branding",
+          "description": "Complete brand identity design and strategy",
+          "provider": { "@id": "https://snaildesigns.com/#organization" }
+        },
+        {
+          "@type": "Service",
+          "position": 4,
+          "name": "Digital Products",
+          "description": "Enterprise and consumer software product design",
+          "provider": { "@id": "https://snaildesigns.com/#organization" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Snail Designs offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Snail Designs offers comprehensive digital services including web design, web development, branding, digital product design, content creation, and custom development solutions using technologies like React, Next.js, and TypeScript."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Project timelines vary based on scope and complexity. A simple website typically takes 2-4 weeks, while complex web applications can take 2-3 months. We provide detailed timelines during our initial consultation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with clients worldwide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Snail Designs works with clients globally. We have experience collaborating with businesses across different time zones and markets, delivering solutions that scale internationally."
+          }
+        }
       ]
     }
     </script>
   </head>
   <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#root" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded z-50">
+      Skip to main content
+    </a>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Noscript fallback -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; background: #121212; color: white; min-height: 100vh;">
+        <h1>Snail Designs</h1>
+        <p>Please enable JavaScript to view this website.</p>
+        <p>Contact us at <a href="mailto:hello@snaildesigns.com" style="color: #7014CC;">hello@snaildesigns.com</a></p>
+      </div>
+    </noscript>
   </body>
 </html>

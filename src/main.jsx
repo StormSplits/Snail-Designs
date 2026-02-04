@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/Layout";
+import { initPolyfills } from "./utils/browserPolyfills";
 
 import "./index.css";
 import Home from "./pages/Home";
@@ -14,6 +15,9 @@ import Services from "./pages/Services";
 import { Work } from "./pages/Work";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
+
+// Initialize browser polyfills
+initPolyfills();
 
 const router = createBrowserRouter([
   {
