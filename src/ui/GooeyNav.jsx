@@ -36,7 +36,7 @@ const Gooey = ({
 	// Sync activeIndex with current route on mount and location change
 	useEffect(() => {
 		const currentIndex = items.findIndex(item => item.href === location.pathname);
-		if (currentIndex !== -1 && currentIndex !== activeIndex) {
+		if (currentIndex !== activeIndex) {
 			setActiveIndex(currentIndex);
 		}
 	}, [location.pathname]);
@@ -168,7 +168,21 @@ const Gooey = ({
 		const activeLi = navRef.current.querySelectorAll("li")[activeIndex];
 		if (activeLi) {
 			updateEffectPosition(activeLi);
-			textRef.current?.classList.add("active");
+			if (textRef.current) {
+				textRef.current.classList.add("active");
+				textRef.current.style.opacity = "1";
+			}
+			if (filterRef.current) {
+				filterRef.current.style.opacity = "1";
+			}
+		} else {
+			if (textRef.current) {
+				textRef.current.classList.remove("active");
+				textRef.current.style.opacity = "0";
+			}
+			if (filterRef.current) {
+				filterRef.current.style.opacity = "0";
+			}
 		}
 		const resizeObserver = new ResizeObserver(() => {
 			const currentActiveLi =

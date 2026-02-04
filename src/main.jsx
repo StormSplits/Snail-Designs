@@ -15,6 +15,9 @@ import Services from "./pages/Services";
 import { Work } from "./pages/Work";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
+import { Cancellation } from "./pages/Cancellation";
+import { Privacy } from "./pages/Privacy";
+import { Terms } from "./pages/Terms";
 
 // Initialize browser polyfills
 initPolyfills();
@@ -51,6 +54,18 @@ const router = createBrowserRouter([
       {
         path: "/works/:id",
         element: <ProjectDetail />,
+      },
+      {
+        path: "/cancellation",
+        element: <Cancellation />,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy />,
+      },
+      {
+        path: "/terms",
+        element: <Terms />,
       },
       {
         path: "*",
