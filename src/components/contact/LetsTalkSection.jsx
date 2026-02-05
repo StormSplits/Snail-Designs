@@ -19,7 +19,7 @@ export default function LetsTalkSection() {
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-8">
 						{/* Become a Client */}
 						<div className="space-y-3">
-							<h3 className="text-gray-400 text-lg">
+							<h3 className="text-white text-lg">
 								Become a Client
 							</h3>
 							<LinkButton text={"Get Free Quotation"} url={"https://tally.so/r/w4ebM5"} isExternal={true} />
@@ -27,7 +27,7 @@ export default function LetsTalkSection() {
 
 						{/* Contact Us */}
 						<div className="space-y-3">
-							<h3 className="text-gray-400 text-lg">
+							<h3 className="text-white text-lg">
 								Contact Us
 							</h3>
 							<LinkButton text={"Hey SnailDesigns"} url={"mailto:designssnail@gmail.com"} isExternal={true} />

@@ -46,7 +46,7 @@ export default function LocationsSection() {
 							<h3 className="text-4xl md:text-5xl lg:text-6xl font-bold">
 								{location.city}
 							</h3>
-							<div className="text-lg md:text-xl text-gray-400 space-y-1">
+							<div className="text-lg md:text-xl text-white space-y-1">
 								<p>{location.address}</p>
 								<p>{location.cityState}</p>
 							</div>

@@ -3,6 +3,7 @@ import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SEO from "../components/SEO";
+import { FiArrowRight } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,7 +100,7 @@ const Card = ({ i, title, description, src, tags, bgColor, accentColor, totalCar
 
 	return (
 		<div
-			className={`card-${i} sticky rounded-2xl shadow-2xl overflow-hidden transition-shadow duration-300`}
+			className={`card-${i} min-w-[85vw] md:min-w-[60vw] snap-center h-auto overflow-hidden lg:sticky lg:w-full lg:max-h-[85vh] lg:overflow-y-auto lg:overflow-x-hidden rounded-2xl shadow-2xl transition-shadow duration-300 gpu-accelerate`}
 			style={{
 				top: `${topOffset}px`,
 				backgroundColor: bgColor,
@@ -165,48 +166,56 @@ export default function Services() {
 
 	useLayoutEffect(() => {
 		let ctx = gsap.context(() => {
-			const cards = gsap.utils.toArray('[class^="card-"]');
+			ScrollTrigger.matchMedia({
+				"(min-width: 1024px)": function () {
+					const cards = gsap.utils.toArray('[class^="card-"]');
 
-			cards.forEach((card, i) => {
-				const img = card.querySelector(`[class^="img-"]`);
+					cards.forEach((card, i) => {
+						const img = card.querySelector(`[class^="img-"]`);
 
-				// Create the stacking effect - cards scale down as they get "pushed back"
-				ScrollTrigger.create({
-					trigger: card,
-					start: "top 80px",
-					end: "bottom top",
-					endTrigger: cardsContainerRef.current,
-					pin: false,
-					onUpdate: (self) => {
-						// Calculate how far this card has scrolled past its pin point
-						const progress = self.progress;
-
-						// Scale down the card as it gets "stacked" - no opacity change to maintain readability
-						const scale = gsap.utils.clamp(0.9, 1, 1 - progress * 0.1);
-
-						gsap.to(card, {
-							scale: scale,
-							duration: 0.1,
-							ease: "none"
-						});
-					}
-				});
-
-				// Image zoom-out effect on scroll
-				gsap.fromTo(
-					img,
-					{ scale: 1.3 },
-					{
-						scale: 1,
-						ease: "none",
-						scrollTrigger: {
+						// Create the stacking effect - cards scale down as they get "pushed back"
+						ScrollTrigger.create({
 							trigger: card,
-							start: "top bottom",
-							end: "top 100px",
-							scrub: 1,
-						},
-					}
-				);
+							start: "top 80px",
+							end: "bottom top",
+							endTrigger: cardsContainerRef.current,
+							pin: false,
+							onUpdate: (self) => {
+								// Calculate how far this card has scrolled past its pin point
+								const progress = self.progress;
+
+								// Scale down the card as it gets "stacked" - no opacity change to maintain readability
+								const scale = gsap.utils.clamp(
+									0.9,
+									1,
+									1 - progress * 0.1
+								);
+
+								gsap.to(card, {
+									scale: scale,
+									duration: 0.1,
+									ease: "none",
+								});
+							},
+						});
+
+						// Image zoom-out effect on scroll
+						gsap.fromTo(
+							img,
+							{ scale: 1.3 },
+							{
+								scale: 1,
+								ease: "none",
+								scrollTrigger: {
+									trigger: card,
+									start: "top bottom",
+									end: "top 100px",
+									scrub: 1,
+								},
+							}
+						);
+					});
+				},
 			});
 		}, containerRef);
 
@@ -222,7 +231,7 @@ export default function Services() {
 				url="https://snaildesigns.com/services"
 			/>
 
-			<div ref={containerRef} className="relative bg-black min-h-screen">
+			<div ref={containerRef} className="relative bg-[#121212] min-h-screen">
 				{/* Hero Section */}
 				<div className="container relative z-10 py-20">
 					<div className="text-left">
@@ -242,9 +251,15 @@ export default function Services() {
 				{/* Cards Section */}
 				<div
 					ref={cardsContainerRef}
-					className="container relative z-10 pb-40"
+					className="container relative z-10 pb-20 lg:pb-40"
 				>
-					<div className="space-y-8">
+					{/* Mobile Scroll Indicator */}
+					<div className="lg:hidden flex items-center gap-2 text-white mb-4 px-4">
+						<span className="text-sm font-CircularLight tracking-wide">Swipe to explore</span>
+						<FiArrowRight className="text-lg" />
+					</div>
+
+					<div className="flex overflow-x-auto snap-x snap-mandatory gap-6 px-4 pb-8 lg:block lg:space-y-[50vh] lg:overflow-visible lg:pb-0 scrollbar-hide">
 						{projects.map((p, i) => (
 							<Card
 								key={i}

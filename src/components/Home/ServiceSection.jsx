@@ -66,9 +66,8 @@ function Accordion({ content, heading, isOpen, onClick }) {
 				</div>
 			</div>
 			<div
-				className={`transition-all overflow-hidden text-xl lg:text-2xl max-w-[30ch] ${
-					isOpen ? "max-h-40 py-2" : "max-h-0"
-				}`}
+				className={`transition-all overflow-hidden text-xl lg:text-2xl max-w-[30ch] ${isOpen ? "max-h-40 py-2" : "max-h-0"
+					}`}
 			>
 				<div className="overflow-hidden h-full">{content}</div>
 			</div>
@@ -426,7 +425,7 @@ void main() {
 	]);
 
 	return (
-		<div className="relative xl:h-lvh">
+		<div className="relative z-0 xl:min-h-lvh flex flex-col">
 			<div
 				ref={containerRef}
 				className="absolute inset-0 -z-10"
@@ -437,7 +436,7 @@ void main() {
 				}}
 			/>
 
-			<div className="py-20 xl:py-40 font-CircularLight bg-black/30 h-full">
+			<div className="py-20 xl:py-40 font-CircularLight bg-black/30 flex-1">
 				<div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-10 relative  container">
 					<div>
 						<h1 className="text-2xl xl:text-3xl max-w-[30ch] leading-snug font-bold mb-4">

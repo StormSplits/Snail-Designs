@@ -354,7 +354,7 @@ const Gooey = ({
 	if (isMobile) {
 		return (
 			<div
-				className={`fixed inset-0 z-[9998] transition-all duration-500 ${isMobileNavOpened
+				className={`fixed inset-0 z-[9998] transition-all duration-500 overflow-y-auto ${isMobileNavOpened
 					? 'opacity-100 pointer-events-auto'
 					: 'opacity-0 pointer-events-none'
 					}`}
@@ -366,14 +366,14 @@ const Gooey = ({
 				{/* Close Button - Using hamburger icon */}
 				<button
 					onClick={toggleMobileNav}
-					className={`absolute top-6 right-6 transition-all duration-300 ${isMobileNavOpened ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
+					className={`absolute top-6 right-6 z-10 transition-all duration-300 ${isMobileNavOpened ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
 						}`}
 					style={{ transitionDelay: isMobileNavOpened ? '300ms' : '0ms' }}
 				>
 					<RiMenu4Fill size={28} />
 				</button>
 
-				<div className="h-full flex flex-col justify-center items-center" ref={containerRef}>
+				<div className="min-h-full py-24 flex flex-col justify-center items-center relative" ref={containerRef}>
 					<nav style={{ transform: "translate3d(0,0,0.01px)" }}>
 						<ul
 							ref={navRef}
