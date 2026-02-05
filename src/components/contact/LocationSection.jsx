@@ -33,9 +33,7 @@ export default function LocationsSection() {
 						Locations
 					</h2>
 					<p className="text-xl md:text-2xl leading-relaxed max-w-2xl">
-						Our team is fully remote, but we can meet on video
-						conferences when collaboration requires it to make the
-						biggest impact
+						We’re a fully remote team that comes together on video whenever collaboration will maximize impact.
 					</p>
 				</div>
 

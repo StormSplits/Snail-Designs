@@ -13,9 +13,9 @@ export const ClientsList = () => {
 				"Transforming existing page into a more aesthetically pleasing, intuitive, and engaging experience for their CRM service audience.",
 		},
 		{
-			name: "Ezaz Shaik",
+			name: "Ezaz Shaikh",
 			description:
-				"UI/UX Design and website development for Ezaz Shaik.",
+				"UI/UX Design and website development for Ezaz Shaikh.",
 		},
 		{
 			name: "Sneh Dhara NGO",
