@@ -83,7 +83,7 @@ export const projects = [
 function HalfLayoutCard({ project }) {
 	return (
 		<>
-			<div className="group-hover:bg-gradient-to-t from-black hover:ring border border-p5 lg:border-p5 hover:ring-p5 rounded-md overflow-hidden via-transparent px-4 py-8 to-transparent">
+			<div className="group-hover:bg-gradient-to-t from-black hover:ring border border-p5 lg:border-p5 hover:ring-p5 rounded-2xl overflow-hidden via-transparent px-4 py-8 to-transparent">
 				<div className="relative overflow-hidden mb-6 aspect-[4/3]">
 					<img
 						src={project.image}
@@ -125,7 +125,7 @@ function HalfLayoutCard({ project }) {
 
 function FullWidthLayoutCard({ project }) {
 	return (
-		<div className="relative   hover:ring hover:ring-p5 border border-p5 lg:border-p5">
+		<div className="relative rounded-2xl overflow-hidden hover:ring hover:ring-p5 border border-p5 lg:border-p5">
 			<div className="absolute inset-0 overflow-hidden">
 				<img
 					src={project.image}
