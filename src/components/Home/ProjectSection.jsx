@@ -293,6 +293,12 @@ const ProjectSection = ({
           .card--border-glow:hover {
             box-shadow: 0 4px 20px rgba(46, 24, 78, 0.4), 0 0 30px rgba(${glowColor}, 0.2);
           }
+
+          @-moz-document url-prefix() {
+            .card--border-glow:hover {
+              box-shadow: 0 4px 20px rgba(46, 24, 78, 0.4), 0 0 30px rgba(${glowColor}, 0.05);
+            }
+          }
           
           .text-clamp-1 {
             display: -webkit-box;

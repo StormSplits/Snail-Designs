@@ -97,13 +97,13 @@ const projects = [
 const Card = ({ title, description, src, tags, bgColor, accentColor }) => {
 	return (
 		<div
-			className="w-full md:w-[95vw] lg:w-screen h-full flex-shrink-0 flex items-center justify-center p-4 lg:p-10"
+			className="w-screen h-screen flex-shrink-0 flex items-center justify-center p-6 lg:p-20 overflow-hidden relative"
 			style={{ backgroundColor: bgColor }}
 		>
-			<div className="w-full max-w-7xl h-full flex flex-col landscape:flex-row lg:flex-row items-center justify-start landscape:justify-center lg:justify-between gap-6 landscape:gap-8 lg:gap-16 pt-12 landscape:pt-0 lg:pt-0">
+			<div className="w-full max-w-[1600px] h-full grid grid-cols-1 landscape:grid-cols-2 lg:grid-cols-2 items-center gap-10 lg:gap-24">
 
-				{/* Right Image (Top on Portrait Mobile, Left on Landscape Mobile, Right on Desktop) */}
-				<div className="w-full landscape:w-auto lg:w-1/2 h-[30vh] landscape:h-[70vh] lg:h-[80vh] aspect-auto landscape:aspect-square lg:aspect-auto flex-shrink-0 order-1 landscape:order-1 lg:order-2 rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl relative">
+				{/* Image Container */}
+				<div className="w-full h-[40vh] landscape:h-auto lg:h-auto aspect-square lg:aspect-square order-1 landscape:order-1 lg:order-2 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-2xl relative mx-auto max-h-[80vh]">
 					<div className="w-full h-full transform transition-transform duration-700 hover:scale-105">
 						<img
 							src={src}
@@ -115,32 +115,32 @@ const Card = ({ title, description, src, tags, bgColor, accentColor }) => {
 					<div className="absolute inset-0 bg-black/10 mix-blend-multiply pointer-events-none"></div>
 				</div>
 
-				{/* Left Content (Bottom on Portrait Mobile, Right on Landscape Mobile, Left on Desktop) */}
-				<div className="w-full landscape:w-1/2 lg:w-1/2 flex flex-col justify-start landscape:justify-center lg:justify-center order-2 landscape:order-2 lg:order-1 h-full lg:h-full overflow-y-auto landscape:overflow-y-auto lg:overflow-visible pb-4 landscape:pb-0 landscape:max-h-[80vh] hide-scrollbar">
-					<div className="max-w-xl">
+				{/* Text Content */}
+				<div className="w-full flex flex-col justify-center text-left order-2 landscape:order-2 lg:order-1">
+					<div className="max-w-xl mx-auto lg:mx-0">
 						<h2
-							className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4 landscape:mb-4 lg:mb-8"
+							className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 lg:mb-10"
 							style={{ color: '#1a1a1a' }}
 						>
 							{title}
 						</h2>
 
-						<p className="text-gray-800 text-base md:text-lg lg:text-xl leading-relaxed mb-6 landscape:mb-6 lg:mb-10">
+						<p className="text-gray-800 text-lg md:text-xl leading-relaxed mb-8 lg:mb-12">
 							{description}
 						</p>
 
-						<div className="mb-4 landscape:mb-0 lg:mb-8">
-							<h3 className="text-xs lg:text-sm uppercase tracking-wider text-gray-500 font-semibold mb-4 lg:mb-6">
+						<div>
+							<h3 className="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-6">
 								What we do
 							</h3>
-							<ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-4">
+							<ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 								{tags.map((tag, idx) => (
 									<li
 										key={idx}
-										className="flex items-center gap-2 lg:gap-3 text-gray-700 font-medium text-sm lg:text-base"
+										className="flex items-center gap-3 text-gray-700 font-medium text-base"
 									>
 										<span
-											className="w-1.5 h-1.5 lg:w-2 lg:h-2 rounded-full flex-shrink-0"
+											className="w-2 h-2 rounded-full flex-shrink-0"
 											style={{ backgroundColor: accentColor }}
 										></span>
 										{tag}
@@ -206,7 +206,7 @@ export default function Services() {
 				{/* Intro Section - Keeping it separate so it scrolls normally before hitting the pin */}
 				<div className="container relative z-10 py-20 lg:py-32">
 					<div className="text-left">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4vmax] leading-snug font-bold mb-4">
+						<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-snug font-bold mb-4">
 							Your Creative Partner <br />
 							in Digital Growth
 						</h1>

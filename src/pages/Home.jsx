@@ -46,7 +46,7 @@ const Home = () => {
 			<div className="relative grid grid-cols-1 lg:grid-cols-2 container mx-auto px-4 sm:px-6 lg:px-8 gap-6 sm:gap-8 py-6 sm:py-10">
 				<div className="flex items-center justify-center lg:justify-start order-2 lg:order-1">
 					<div className=" lg:text-left w-full">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4vmax] leading-snug font-bold mb-4">
+						<h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-snug font-bold mb-4">
 							Designing experiences. <br />
 							Building the web.
 						</h1>

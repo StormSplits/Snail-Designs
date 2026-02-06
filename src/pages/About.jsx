@@ -95,7 +95,7 @@ export const About = () => {
             </div>
           </div>
           <div className="place-content-center mt-5 md:mt-0">
-            <h1 className="text-[4vmax] leading-snug font-bold mb-4">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl leading-snug font-bold mb-4">
               Where creativity meets technology to transform brands
             </h1>
           </div>

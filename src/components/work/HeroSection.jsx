@@ -196,7 +196,7 @@ export default function PortfolioWebsite() {
 				<div className="flex flex-col md:flex-row justify-between items-start gap-12">
 					{/* Left side - Hero text */}
 					<div className="flex-1 lg:w-2/3">
-						<h1 className="text-[5vmax] font-CircularBlack max-w-[20ch] text-left leading-snug mb-4">
+						<h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl font-CircularBlack max-w-[20ch] text-left leading-snug mb-4">
 							{activeTab === "all" &&
 								"We bring your boldest ideas to life"}
 							{activeTab === "digital" &&
