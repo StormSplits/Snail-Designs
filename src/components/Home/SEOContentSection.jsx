@@ -7,25 +7,27 @@ const SEOContentSection = () => {
 
                 {/* Column 1: Core Value Proposition */}
                 <div>
-                    <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
-                        Leading Web Design Agency in Lucknow
-                    </h2>
-                    <p className="mb-6 leading-relaxed">
-                        Snail Designs stands as a premier <strong>web design agency in Lucknow</strong>, committed to transforming how businesses interact with the digital world. Founded by a team of tech visionaries and lead by co-founders with global experience, we utilize cutting-edge technology to build websites that are not just visually stunning but performance-driven.
-                    </p>
-                    <p className="mb-6 leading-relaxed">
-                        Unlike traditional agencies, we focus on <strong>React and Next.js development</strong> to ensure your website is fast, SEO-friendly, and scalable. whether you are a startup looking for a digital product launch or an established enterprise seeking digital transformation, our team delivers custom solutions tailored to your unique needs.
-                    </p>
+                    <div>
+                        <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+                            Global Web Design & Development Agency
+                        </h2>
+                        <p className="mb-6 leading-relaxed">
+                            Snail Designs is a premier <strong>digital agency based in India</strong>, serving ambitious brands and startups worldwide. We combine global design standards with engineering excellence to deliver high-performance websites. Whether you are in the US, UK, or anywhere across the globe, our remote-first team ensures seamless collaboration and world-class delivery.
+                        </p>
+                        <p className="mb-6 leading-relaxed">
+                            We specialize in <strong>Offshore React & Next.js Development</strong>, providing cost-effective yet premium solutions. Our co-founder-led approach ensures that you get the strategic attention of a boutique agency with the technical capabilities of a large firm.
+                        </p>
 
-                    <h3 className="text-xl font-bold text-white mb-4 mt-8">
-                        Why Choose Snail Designs?
-                    </h3>
-                    <ul className="list-disc pl-5 space-y-2 mb-6">
-                        <li><strong>Keep It Simple:</strong> We believe in minimalism and clarity. Our designs cut through the noise.</li>
-                        <li><strong>Performance First:</strong> Utilizing Next.js and Tailwind CSS for lightning-fast load times.</li>
-                        <li><strong>Global Standards, Local expertise:</strong> Based in Lucknow, serving clients worldwide with international design quality.</li>
-                        <li><strong>AI Integration:</strong> Leveraging Generative AI to automate workflows and create unique user experiences.</li>
-                    </ul>
+                        <h3 className="text-xl font-bold text-white mb-4 mt-8">
+                            Why Partner With Snail Designs?
+                        </h3>
+                        <ul className="list-disc pl-5 space-y-2 mb-6">
+                            <li><strong>Global Standards:</strong> We build digital products that compete on the international stage.</li>
+                            <li><strong>Remote-Ready Team:</strong> Proven track record of successful collaboration with global clients.</li>
+                            <li><strong>Cost-Effective Quality:</strong> Premium development services from India at competitive rates.</li>
+                            <li><strong>AI Integration:</strong> Leveraging Generative AI to stay ahead of the curve.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Column 2: Process & Tech Stack */}

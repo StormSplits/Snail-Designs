@@ -111,11 +111,16 @@ const SEO = ({
     "url": "https://www.snaildesigns.in",
     "logo": "https://www.snaildesigns.in/logo.png",
     "description": "Professional web design and development agency specializing in React, Next.js, and modern web technologies.",
+
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lucknow",
       "addressRegion": "Uttar Pradesh",
       "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "WorldWide"
     },
     "contactPoint": [
       {

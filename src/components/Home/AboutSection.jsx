@@ -27,7 +27,7 @@ export default function AboutSection() {
 					We bring ideas to life with design that moves at your pace.
 				</h2>
 				<p className="text-xl max-w-[45ch] lg:text-2xl mt-8 font-CircularLight">
-					From custom websites to comprehensive branding, <strong className="font-bold">Snail Designs</strong> is a premier <strong className="font-bold">web design agency in Lucknow</strong> dedicated to building inventive digital experiences. Our co-founder-led team combines global design standards with local expertise to connect with people everywhere your brand shows up. We specialize in <strong className="font-bold">React, Next.js, and AI-driven solutions</strong> that propel businesses forward.
+					From custom websites to comprehensive branding, <strong className="font-bold">Snail Designs</strong> is a <strong className="font-bold">global web design agency</strong> based in Lucknow. We connect with ambitious brands worldwide, delivering <strong className="font-bold">React, Next.js, and AI-driven solutions</strong> that transcend borders.
 				</p>
 				<div className="my-12 font-CircularLight">
 					<LinkButton text="View Our Services" url={"/services"} />

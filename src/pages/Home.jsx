@@ -37,9 +37,9 @@ const Home = () => {
 		<>
 			{/* ADD THIS SEO COMPONENT */}
 			<SEO
-				title="Snail Designs - Top Web Design Agency in Lucknow | React & Next.js Experts"
-				description="Transform your digital presence with Snail Designs, Lucknow's leading web design agency. We specialize in custom websites, digital products, and Generative AI solutions using React, Next.js, and Tailwind CSS."
-				keywords="web design agency lucknow, web development company, digital product design, react developers india, nextjs experts, generative ai solutions, ui/ux design studio"
+				title="Snail Designs - Global Web Design Agency | React & Next.js Experts"
+				description="Transform your digital presence with Snail Designs. A premium web design agency serving clients worldwide. We build high-performance websites and AI solutions using React and Next.js."
+				keywords="web design agency, offshore react development, global web development company, outsourcing nextjs, web design agency lucknow, ai solutions"
 				url="https://www.snaildesigns.in"
 			/>
 
