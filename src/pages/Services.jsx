@@ -197,7 +197,7 @@ export default function Services() {
 				title="Our Services"
 				description="Explore our comprehensive web design and development services including React development, Next.js applications, UI/UX design, responsive web design, custom web solutions, and frontend development."
 				keywords="web design services, web development services, react development, nextjs services, UI/UX design, responsive design, frontend development services, custom web applications"
-				url="https://snaildesigns.com/services"
+				url="https://www.snaildesigns.in/services"
 			/>
 
 			{/* Main Wrapper */}

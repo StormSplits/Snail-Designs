@@ -6,8 +6,8 @@ const SEO = ({
   title = "Snail Designs - Web Design & Development Agency",
   description = "Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies.",
   keywords = "web design, web development, react development, nextjs, typescript, tailwind css",
-  image = "https://snaildesigns.com/og-image.jpg",
-  url = "https://snaildesigns.com",
+  image = "https://www.snaildesigns.in/og-image.jpg",
+  url = "https://www.snaildesigns.in",
   type = "website",
   article = null, // For blog/article pages
   breadcrumbs = null, // Array of { name, url } for breadcrumb schema
@@ -50,7 +50,7 @@ const SEO = ({
         "name": "Snail Designs",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://snaildesigns.com/logo.png"
+          "url": "https://www.snaildesigns.in/logo.png"
         }
       },
       "datePublished": article.datePublished,
@@ -70,7 +70,7 @@ const SEO = ({
       "provider": {
         "@type": "Organization",
         "name": "Snail Designs",
-        "url": "https://snaildesigns.com"
+        "url": "https://www.snaildesigns.in"
       },
       "areaServed": {
         "@type": "Country",
@@ -89,7 +89,7 @@ const SEO = ({
     "isPartOf": {
       "@type": "WebSite",
       "name": "Snail Designs",
-      "url": "https://snaildesigns.com"
+      "url": "https://www.snaildesigns.in"
     },
     "publisher": {
       "@type": "Organization",

@@ -39,7 +39,7 @@ const Home = () => {
 				title="Home"
 				description="Transform your digital presence with Snail Designs. Expert web design and development services using React, Next.js, TypeScript, and Tailwind CSS."
 				keywords="web design agency, react development, nextjs development, web development services, UI/UX design, frontend development"
-				url="https://snaildesigns.com"
+				url="https://www.snaildesigns.in"
 			/>
 
 			{/* YOUR EXISTING CODE BELOW */}

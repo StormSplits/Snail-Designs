@@ -9,7 +9,7 @@ export default function NotFound() {
 				title="Page Not Found (404)"
 				description="The page you're looking for doesn't exist. Navigate back to our homepage to explore our web design and development services."
 				keywords="404, page not found, error page"
-				url="https://snaildesigns.com/404"
+				url="https://www.snaildesigns.in/404"
 			/>
 			<style>
 				{`

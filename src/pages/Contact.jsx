@@ -7,14 +7,14 @@ import SEO from "../components/SEO";
 export const Contact = () => {
   return (
     <>
-     <SEO
+      <SEO
         title="Contact Us"
         description="Get in touch with Snail Designs. Let's discuss your project and create something amazing together. Contact us for web design, development services, and project consultations."
         keywords="contact snail designs, get in touch, web design inquiry, project consultation, hire web developers, contact form, request quote"
-        url="https://snaildesigns.com/contact"
+        url="https://www.snaildesigns.in/contact"
       />
       <LetsTalkSection />
-      <LocationsSection/>
+      <LocationsSection />
       {/* <JoinUsSection/> */}
     </>
   );

@@ -27,7 +27,7 @@ export default function ProjectDetail() {
             <SEO
                 title={`${project.title} | Snail Design`}
                 description={project.description}
-                url={`https://snaildesigns.com/works/${project.id}`}
+                url={`https://www.snaildesigns.in/works/${project.id}`}
             />
 
             <div className="min-h-screen">

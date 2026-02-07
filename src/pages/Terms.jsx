@@ -8,7 +8,7 @@ export const Terms = () => {
                 title="Terms and Conditions"
                 description="Terms and Conditions for using Snail Designs website and services."
                 keywords="terms and conditions, terms of service, legal agreement"
-                url="https://snaildesigns.com/terms"
+                url="https://www.snaildesigns.in/terms"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">
                 <div className="max-w-4xl mx-auto space-y-8">

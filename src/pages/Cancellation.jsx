@@ -8,7 +8,7 @@ export const Cancellation = () => {
                 title="Cancellation & Refund Policy"
                 description="Cancellation and refund policy for Snail Designs services."
                 keywords="cancellation policy, refund policy, terms of service"
-                url="https://snaildesigns.com/cancellation"
+                url="https://www.snaildesigns.in/cancellation"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">
                 <div className="max-w-4xl mx-auto space-y-8">

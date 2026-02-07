@@ -78,7 +78,7 @@ export const About = () => {
         title="About Us"
         description="Learn about Snail Designs - a passionate team of web designers and developers creating innovative digital solutions. Discover our story, values, and expertise in React, Next.js, and modern web technologies."
         keywords="about snail designs, web design team, development agency, our story, company values, web design experts, react developers"
-        url="https://snaildesigns.com/about"
+        url="https://www.snaildesigns.in/about"
       />
       <div>
         <div className="container grid grid-cols-1 grid-rows-2 h-[80vh] md:h-screen lg:grid-cols-2 lg:grid-rows-1 lg:mt-8 gap-8 lg:h-auto">

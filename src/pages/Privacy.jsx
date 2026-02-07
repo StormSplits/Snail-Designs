@@ -8,7 +8,7 @@ export const Privacy = () => {
                 title="Privacy Policy"
                 description="Privacy Policy for Snail Designs. Learn how we collect, use, and protect your personal data."
                 keywords="privacy policy, data protection, personal data"
-                url="https://snaildesigns.com/privacy"
+                url="https://www.snaildesigns.in/privacy"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">
                 <div className="max-w-4xl mx-auto space-y-8">
