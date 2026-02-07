@@ -71,7 +71,7 @@ const Home = () => {
 			<ProjectSection />
 			<AboutSection />
 			<ContactUs />
-			<SEOContentSection />
+			{/* <SEOContentSection /> */}
 			<FAQ />
 		</>
 	);
