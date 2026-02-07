@@ -3,8 +3,8 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "Snail Designs - Web Design & Development Agency",
-  description = "Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies.",
+  title = "Snail Designs - Global Web Design Agency | React & Next.js Experts",
+  description = "Transform your digital presence with Snail Designs. A premium web design agency serving clients worldwide. We build high-performance websites and AI solutions using React and Next.js.",
   keywords = "web design, web development, react development, nextjs, typescript, tailwind css",
   image = "https://www.snaildesigns.in/og-image.jpg",
   url = "https://www.snaildesigns.in",
