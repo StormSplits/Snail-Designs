@@ -5,9 +5,9 @@ export const Cancellation = () => {
     return (
         <>
             <SEO
-                title="Cancellation & Refund Policy"
-                description="Cancellation and refund policy for Snail Designs services."
-                keywords="cancellation policy, refund policy, terms of service"
+                title="Cancellation & Refund Policy | Snail Designs"
+                description="Understand Snail Designs' cancellation and refund policy. Clear guidelines on project cancellations and refund eligibility for our web design services."
+                keywords="cancellation policy, refund policy, snail designs terms, service cancellation"
                 url="https://www.snaildesigns.in/cancellation"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">

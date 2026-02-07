@@ -8,9 +8,9 @@ export const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact Us"
-        description="Get in touch with Snail Designs. Let's discuss your project and create something amazing together. Contact us for web design, development services, and project consultations."
-        keywords="contact snail designs, get in touch, web design inquiry, project consultation, hire web developers, contact form, request quote"
+        title="Contact Snail Designs | Hire Web Developers in Lucknow"
+        description="Get in touch with Snail Designs. Ready to transform your digital presence? Contact us for web design, development, and branding inquiries in Lucknow and globally."
+        keywords="contact web design agency, hire react developers, web design quote lucknow, snail designs contact, connect with web developers"
         url="https://www.snaildesigns.in/contact"
       />
       <LetsTalkSection />

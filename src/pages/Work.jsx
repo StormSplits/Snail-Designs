@@ -5,9 +5,9 @@ export const Work = () => {
   return (
     <>
       <SEO
-        title="Our Work"
-        description="View our portfolio of successful web projects and case studies. See how we've helped businesses transform their online presence with stunning, functional websites and web applications."
-        keywords="web design portfolio, development projects, case studies, our work, web design examples, portfolio, project showcase, react projects"
+        title="Our Work | Web Design Portfolio & Case Studies"
+        description="Explore our portfolio of high-performance websites and digital products. See how Snail Designs helps businesses scale with stunning UI/UX and robust React/Next.js development."
+        keywords="web design portfolio, ui/ux case studies, react project examples, best website designs 2024, digital product portfolio, saas website design examples"
         url="https://www.snaildesigns.in/works"
       />
       <PortfolioWebsite />

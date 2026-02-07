@@ -7,9 +7,9 @@ export const Client = () => {
 	return (
 		<>
 			<SEO
-				title="Our Clients"
-				description="Trusted by leading brands and businesses worldwide. Discover the companies we've partnered with to create exceptional digital experiences and successful web projects."
-				keywords="our clients, client testimonials, case studies, trusted brands, client success stories, client reviews, partnerships"
+				title="Our Clients | Snail Designs"
+				description="See the diverse range of clients and industries Snail Designs has partnered with to deliver exceptional digital experiences."
+				keywords="snail designs clients, web design portfolio clients, happy customers, trusted by brands"
 				url="https://www.snaildesigns.in/client"
 			/>
 			<HeroSection />

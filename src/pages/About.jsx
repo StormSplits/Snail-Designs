@@ -75,9 +75,9 @@ export const About = () => {
   return (
     <>
       <SEO
-        title="About Us"
-        description="Learn about Snail Designs - a passionate team of web designers and developers creating innovative digital solutions. Discover our story, values, and expertise in React, Next.js, and modern web technologies."
-        keywords="about snail designs, web design team, development agency, our story, company values, web design experts, react developers"
+        title="About Snail Designs | Best Web Designers & Developers in Lucknow"
+        description="Meet the team behind Snail Designs. Founded by tech visionaries in Lucknow, we are a full-stack digital agency delivering world-class branding, web development, and AI integration services."
+        keywords="about snail designs, web design team lucknow, tech agency founders, best web designers in lucknow, digital transformation experts, react developers team"
         url="https://www.snaildesigns.in/about"
       />
       <div>

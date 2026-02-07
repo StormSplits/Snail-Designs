@@ -8,6 +8,7 @@ import ProjectSection from "../components/Home/ProjectSection";
 import AboutSection from "../components/Home/AboutSection";
 import FAQ from "../components/Home/FAQ";
 import ContactUs from "../components/Home/ContactUs";
+import SEOContentSection from "../components/Home/SEOContentSection";
 
 import {
 	SiReact,
@@ -36,9 +37,9 @@ const Home = () => {
 		<>
 			{/* ADD THIS SEO COMPONENT */}
 			<SEO
-				title="Home"
-				description="Transform your digital presence with Snail Designs. Expert web design and development services using React, Next.js, TypeScript, and Tailwind CSS."
-				keywords="web design agency, react development, nextjs development, web development services, UI/UX design, frontend development"
+				title="Snail Designs - Top Web Design Agency in Lucknow | React & Next.js Experts"
+				description="Transform your digital presence with Snail Designs, Lucknow's leading web design agency. We specialize in custom websites, digital products, and Generative AI solutions using React, Next.js, and Tailwind CSS."
+				keywords="web design agency lucknow, web development company, digital product design, react developers india, nextjs experts, generative ai solutions, ui/ux design studio"
 				url="https://www.snaildesigns.in"
 			/>
 
@@ -70,6 +71,7 @@ const Home = () => {
 			<ProjectSection />
 			<AboutSection />
 			<ContactUs />
+			<SEOContentSection />
 			<FAQ />
 		</>
 	);

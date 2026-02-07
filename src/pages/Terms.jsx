@@ -5,9 +5,9 @@ export const Terms = () => {
     return (
         <>
             <SEO
-                title="Terms and Conditions"
-                description="Terms and Conditions for using Snail Designs website and services."
-                keywords="terms and conditions, terms of service, legal agreement"
+                title="Terms & Conditions | Snail Designs"
+                description="Review the Terms and Conditions that govern the use of Snail Designs' website and services."
+                keywords="terms and conditions, legal agreement, service terms, snail designs"
                 url="https://www.snaildesigns.in/terms"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">
