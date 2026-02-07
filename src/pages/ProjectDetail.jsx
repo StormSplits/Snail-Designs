@@ -25,9 +25,8 @@ export default function ProjectDetail() {
     return (
         <>
             <SEO
-                title={`${project.title} - Case Study | Snail Designs Portfolio`}
-                description={`Discover how Snail Designs built ${project.title}. A detailed case study on our web design and development process for this project.`}
-                keywords={`web design case study, ${project.category} design, ${project.title} website, snail designs portfolio`}
+                title={`${project.title} | Snail Design`}
+                description={project.description}
                 url={`https://www.snaildesigns.in/works/${project.id}`}
             />
 

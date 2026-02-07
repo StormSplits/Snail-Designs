@@ -26,8 +26,10 @@ export default function AboutSection() {
 				<h2 className="text-2xl xl:text-3xl max-w-[30ch] leading-snug font-bold mb-4">
 					We bring ideas to life with design that moves at your pace.
 				</h2>
-				<p className="text-xl max-w-[45ch] lg:text-2xl mt-8 font-CircularLight">
-					From custom websites to comprehensive branding, <strong className="font-bold">Snail Designs</strong> is a <strong className="font-bold">global web design agency</strong> based in Lucknow. We connect with ambitious brands worldwide, delivering <strong className="font-bold">React, Next.js, and AI-driven solutions</strong> that transcend borders.
+				<p className="text-xl max-w-[30ch] lg:text-2xl mt-8 font-CircularLight">
+					From websites to branding, we design and build inventive
+					digital experiences that connect with people, everywhere
+					your brand shows up.
 				</p>
 				<div className="my-12 font-CircularLight">
 					<LinkButton text="View Our Services" url={"/services"} />

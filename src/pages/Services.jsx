@@ -194,9 +194,9 @@ export default function Services() {
 	return (
 		<>
 			<SEO
-				title="Web Development & UI/UX Services | Branding & AI Solutions"
-				description="Comprehensive digital services by Snail Designs: Custom Web Development, UI/UX Design, Corporate Branding, and Generative AI integration for modern businesses. Built with React & Next.js."
-				keywords="web development services, ui/ux design services, corporate branding agency, generative ai development, ecommerce website design, custom software development, seo services lucknow"
+				title="Our Services"
+				description="Explore our comprehensive web design and development services including React development, Next.js applications, UI/UX design, responsive web design, custom web solutions, and frontend development."
+				keywords="web design services, web development services, react development, nextjs services, UI/UX design, responsive design, frontend development services, custom web applications"
 				url="https://www.snaildesigns.in/services"
 			/>
 

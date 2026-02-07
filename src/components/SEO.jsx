@@ -3,8 +3,8 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "Snail Designs - Global Web Design Agency",
-  description = "Transform your digital presence with Snail Designs. A premium web design agency serving clients worldwide. We build high-performance websites and AI solutions.",
+  title = "Snail Designs - Web Design & Development Agency",
+  description = "Professional web design and development services. We create stunning, responsive websites using React, Next.js, and modern technologies.",
   keywords = "web design, web development, react development, nextjs, typescript, tailwind css",
   image = "https://www.snaildesigns.in/og-image.jpg",
   url = "https://www.snaildesigns.in",
@@ -12,7 +12,6 @@ const SEO = ({
   article = null, // For blog/article pages
   breadcrumbs = null, // Array of { name, url } for breadcrumb schema
   service = null, // For service pages { name, description, provider }
-  faq = null, // For FAQ pages array of { question, answer }
 }) => {
   const siteTitle = title.includes("Snail Designs") ? title : `${title} | Snail Designs`;
 
@@ -94,73 +93,14 @@ const SEO = ({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Snail Designs",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.snaildesigns.in/logo.png"
-      }
+      "name": "Snail Designs"
     }
   });
-
-  // Generate Organization Schema (Global)
-  const getOrganizationSchema = () => ({
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.snaildesigns.in/#organization",
-    "name": "Snail Designs",
-    "url": "https://www.snaildesigns.in",
-    "logo": "https://www.snaildesigns.in/logo.png",
-    "description": "Professional web design and development agency specializing in React, Next.js, and modern web technologies.",
-
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lucknow",
-      "addressRegion": "Uttar Pradesh",
-      "addressCountry": "IN"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "WorldWide"
-    },
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "email": "hello@snaildesigns.in",
-        "availableLanguage": ["English", "Hindi"]
-      }
-    ],
-    "sameAs": [
-      "https://twitter.com/snaildesigns",
-      "https://linkedin.com/company/snaildesigns",
-      "https://github.com/snaildesigns",
-      "https://instagram.com/snaildesigns"
-    ]
-  });
-
-  // Generate FAQ Schema
-  const getFAQSchema = () => {
-    if (!faq || faq.length === 0) return null;
-    return {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faq.map(item => ({
-        "@type": "Question",
-        "name": item.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.answer
-        }
-      }))
-    };
-  };
 
   const breadcrumbSchema = getBreadcrumbSchema();
   const articleSchema = getArticleSchema();
   const serviceSchema = getServiceSchema();
   const webPageSchema = getWebPageSchema();
-  const organizationSchema = getOrganizationSchema();
-  const faqSchema = getFAQSchema();
 
   return (
     <Helmet>
@@ -230,18 +170,6 @@ const SEO = ({
       {serviceSchema && (
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
-        </script>
-      )}
-
-      {/* Organization Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
-
-      {/* FAQ Schema */}
-      {faqSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
         </script>
       )}
     </Helmet>

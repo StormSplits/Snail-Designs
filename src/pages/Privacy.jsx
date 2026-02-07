@@ -5,9 +5,9 @@ export const Privacy = () => {
     return (
         <>
             <SEO
-                title="Privacy Policy | Snail Designs"
-                description="Read Snail Designs' Privacy Policy to understand how we collect, use, and protect your personal information."
-                keywords="privacy policy, data protection, gdpr compliance, snail designs privacy"
+                title="Privacy Policy"
+                description="Privacy Policy for Snail Designs. Learn how we collect, use, and protect your personal data."
+                keywords="privacy policy, data protection, personal data"
                 url="https://www.snaildesigns.in/privacy"
             />
             <div className="container mx-auto px-4 py-20 lg:py-32 text-gray-200 font-CircularBook">

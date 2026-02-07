@@ -6,9 +6,9 @@ export default function NotFound() {
 	return (
 		<>
 			<SEO
-				title="404 - Page Not Found | Snail Designs"
-				description="The page you are looking for does not exist. Navigate back to Snail Designs homepage to explore our web design services."
-				keywords="404 error, page not found, snail designs 404"
+				title="Page Not Found (404)"
+				description="The page you're looking for doesn't exist. Navigate back to our homepage to explore our web design and development services."
+				keywords="404, page not found, error page"
 				url="https://www.snaildesigns.in/404"
 			/>
 			<style>

@@ -3,26 +3,26 @@ import { Renderer, Program, Mesh, Triangle } from "ogl";
 
 const Services = [
 	{
-		heading: "Branding & Identity",
+		heading: "Branding",
 		content:
-			"Crafting a unique voice and visual system that sets you apart. We build corporate identities, logos, and brand strategies that resonate globally and define your market position.",
+			"Crafting a unique voice and visual system that sets you apart.",
 	},
 	{
 		heading: "UI/UX Design",
-		content: "Creating intuitive and delightful digital products. Our design process focuses on user-centric interfaces, wireframing, and interactive prototypes using Figma.",
+		content: "Creating intuitive and delightful digital products.",
 	},
 	{
 		heading: "Web Development",
-		content: "Building fast, scalable, and responsive websites using React, Next.js, and Tailwind CSS. We specialize in custom front-end and full-stack solutions optimized for performance and SEO.",
+		content: "Building fast, scalable, and responsive websites.",
 	},
 	{
-		heading: "Generative AI Solutions",
+		heading: "Generative AI",
 		content:
-			"Integrating cutting-edge AI to automate workflows, build custom chatbots, and create unique generative content. We help businesses leverage LLMs and AI tools for growth.",
+			"Integrating cutting-edge AI to automate workflows and create unique content.",
 	},
 	{
-		heading: "Digital Products",
-		content: "Producing stunning visuals and functional software products. From SaaS platforms to mobile-responsive web apps, we deliver engineering excellence.",
+		heading: "Graphic Design",
+		content: "Producing stunning visuals for all your marketing needs.",
 	},
 ];
 
