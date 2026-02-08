@@ -25,7 +25,7 @@ export default function ProjectDetail() {
     return (
         <>
             <SEO
-                title={`${project.title} | Snail Design`}
+                title={`${project.title} | Snail Designs`}
                 description={project.description}
                 url={`https://www.snaildesigns.in/works/${project.id}`}
             />

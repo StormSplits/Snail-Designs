@@ -38,7 +38,7 @@ export default function Footer() {
 						<div className="mt-6 space-y-6">
 							<address className="not-italic leading-6">
 								<div className="font-semibold">
-									Snail Design
+									Snail Designs
 								</div>
 								Lucknow
 								<br />
@@ -144,13 +144,13 @@ export default function Footer() {
 				<div className="pointer-events-none select-none pt-16 md:pt-20">
 					<div className="leading-[0.85] text-[20vmin] font-CircularBlack">
 						<div>snail</div>
-						<div>design</div>
+						<div>designs</div>
 					</div>
 				</div>
 
 				{/* legal row */}
 				<div className="mt-6 flex flex-col justify-between gap-4 border-t border-white py-4 text-sm md:flex-row">
-					<p>© 2026 Snail Design. All rights reserved.</p>
+					<p>© 2026 Snail Designs. All rights reserved.</p>
 					<div className="flex items-center gap-6">
 						<Link to="/cancellation" className="group relative inline-block transition-colors duration-300 hover:text-purple-300">
 							Cancellation Policy
