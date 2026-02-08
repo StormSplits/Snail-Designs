@@ -196,7 +196,7 @@ export const Cancellation = () => {
                         <p>All cancellation requests must be sent to:</p>
                         <p><strong>Snail Designs</strong><br />
                             Lucknow, Uttar Pradesh, India<br />
-                            Email: <a href="mailto:designssnail@gmail.com" className="text-purple-400 hover:text-purple-300">designssnail@gmail.com</a></p>
+                            Email: <a href="mailto:work@snaildesigns.in" className="text-purple-400 hover:text-purple-300">work@snaildesigns.in</a></p>
                     </div>
                 </div>
             </div>

@@ -156,7 +156,7 @@ export const Privacy = () => {
                         <h2 className="text-2xl font-bold text-white mt-8">15. Grievance Officer (India Compliance Section)</h2>
                         <p>In accordance with Indian data protection requirements, you may contact our designated Grievance Officer:</p>
                         <p><strong>Name:</strong> Gufran Khan<br />
-                            <strong>Email:</strong> <a href="mailto:designssnail@gmail.com" className="text-purple-400 hover:text-purple-300">designssnail@gmail.com</a><br />
+                            <strong>Email:</strong> <a href="mailto:work@snaildesigns.in" className="text-purple-400 hover:text-purple-300">work@snaildesigns.in</a><br />
                             <strong>Address:</strong> Lucknow, Uttar Pradesh, India</p>
                         <p>We will respond within a reasonable time as required by law.</p>
 
@@ -167,7 +167,7 @@ export const Privacy = () => {
                         <p>For privacy-related questions or requests:</p>
                         <p><strong>Snail Designs</strong><br />
                             Lucknow, Uttar Pradesh, India<br />
-                            Email: <a href="mailto:designssnail@gmail.com" className="text-purple-400 hover:text-purple-300">designssnail@gmail.com</a></p>
+                            Email: <a href="mailto:work@snaildesigns.in" className="text-purple-400 hover:text-purple-300">work@snaildesigns.in</a></p>
                     </div>
                 </div>
             </div>
