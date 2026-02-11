@@ -152,7 +152,13 @@ async function prerenderRoute(browser, route) {
  * Main prerender function
  */
 async function prerender() {
+    const isCI = process.env.CI || process.env.VERCEL || process.env.NETLIFY;
+
     console.log('\n🔄 Pre-rendering static HTML for SEO...\n');
+
+    if (isCI) {
+        console.log('  ℹ️  CI/Vercel environment detected — pre-rendering may be limited.\n');
+    }
 
     // Verify dist directory exists
     if (!existsSync(DIST_DIR)) {
@@ -163,16 +169,28 @@ async function prerender() {
     // Start static server
     const server = await startStaticServer();
 
-    // Launch Puppeteer
-    const browser = await launch({
-        headless: true,
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-gpu',
-        ],
-    });
+    let browser;
+    try {
+        // Launch Puppeteer — may fail on CI if Chromium is not available
+        browser = await launch({
+            headless: true,
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
+                '--single-process',
+                '--no-zygote',
+            ],
+        });
+    } catch (launchError) {
+        server.close();
+        console.log(`\n⚠️  Puppeteer could not launch: ${launchError.message}`);
+        console.log('  Skipping pre-rendering. The site will still work (client-side rendering).');
+        console.log('  To generate pre-rendered HTML, run "npm run build:prerender" locally.\n');
+        // Exit 0 so the build succeeds — the site works fine without pre-rendering
+        process.exit(0);
+    }
 
     console.log(`  Pre-rendering ${ROUTES.length} routes...\n`);
 
@@ -196,6 +214,11 @@ async function prerender() {
 
     if (successful < ROUTES.length) {
         console.log('\n⚠️  Some routes failed to pre-render. Check errors above.');
+        // On CI, don't fail the build over pre-render issues
+        if (isCI) {
+            console.log('  (CI detected — continuing build despite pre-render failures)\n');
+            process.exit(0);
+        }
         process.exit(1);
     }
 
@@ -203,6 +226,11 @@ async function prerender() {
 }
 
 prerender().catch((error) => {
-    console.error('Pre-rendering failed:', error);
+    console.error('Pre-rendering failed:', error.message || error);
+    // On CI/Vercel, don't block the build
+    if (process.env.CI || process.env.VERCEL || process.env.NETLIFY) {
+        console.log('  (CI detected — build will continue without pre-rendering)\n');
+        process.exit(0);
+    }
     process.exit(1);
 });
