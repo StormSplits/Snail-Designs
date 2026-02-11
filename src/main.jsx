@@ -84,3 +84,7 @@ ReactDOM.createRoot(root).render(
     <Analytics />
   </HelmetProvider>
 );
+
+// Signal that the app has rendered (used by pre-render script for SEO)
+document.__APP_RENDERED__ = true;
+document.dispatchEvent(new Event('app-rendered'));

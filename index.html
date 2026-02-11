@@ -293,12 +293,52 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 
-  <!-- Noscript fallback -->
+  <!-- Noscript fallback — semantic content for crawlers and non-JS browsers -->
   <noscript>
-    <div style="padding: 2rem; text-align: center; background: #121212; color: white; min-height: 100vh;">
-      <h1>Snail Designs</h1>
-      <p>Please enable JavaScript to view this website.</p>
-      <p>Contact us at <a href="mailto:work@snaildesigns.in" style="color: #7014CC;">work@snaildesigns.in</a></p>
+    <div
+      style="padding: 2rem; background: #121212; color: white; min-height: 100vh; font-family: system-ui, -apple-system, sans-serif;">
+      <header style="text-align: center; padding: 2rem 0; border-bottom: 1px solid #333;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Snail Designs</h1>
+        <p style="color: #aaa; font-size: 1.1rem;">Global Web Design &amp; Development Agency</p>
+      </header>
+      <nav style="text-align: center; padding: 1.5rem 0;">
+        <a href="/" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">Home</a>
+        <a href="/about" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">About</a>
+        <a href="/services" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">Services</a>
+        <a href="/works" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">Portfolio</a>
+        <a href="/client" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">Clients</a>
+        <a href="/contact" style="color: #7014CC; margin: 0 1rem; text-decoration: none;">Contact</a>
+      </nav>
+      <main style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+        <section>
+          <h2 style="color: #7014CC;">Designing experiences. Building the web.</h2>
+          <p>Transform your digital presence with Snail Designs. We are a premium web design agency serving clients
+            worldwide, building high-performance websites and AI solutions.</p>
+        </section>
+        <section style="margin-top: 2rem;">
+          <h2>Our Services</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li style="padding: 0.5rem 0;"><strong>Web Design</strong> — Custom website design with modern UI/UX
+              principles</li>
+            <li style="padding: 0.5rem 0;"><strong>Web Development</strong> — Full-stack development using React,
+              Next.js, and modern technologies</li>
+            <li style="padding: 0.5rem 0;"><strong>Branding</strong> — Complete brand identity design and strategy</li>
+            <li style="padding: 0.5rem 0;"><strong>Digital Products</strong> — Enterprise and consumer software product
+              design</li>
+          </ul>
+        </section>
+        <section style="margin-top: 2rem;">
+          <h2>Contact Us</h2>
+          <p>Email: <a href="mailto:work@snaildesigns.in" style="color: #7014CC;">work@snaildesigns.in</a></p>
+          <p>Location: Lucknow, India — Serving clients globally</p>
+        </section>
+        <section style="margin-top: 2rem;">
+          <h2>Legal</h2>
+          <a href="/terms" style="color: #7014CC; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/privacy" style="color: #7014CC; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/cancellation" style="color: #7014CC;">Cancellation Policy</a>
+        </section>
+      </main>
     </div>
   </noscript>
 </body>

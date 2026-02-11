@@ -30,7 +30,7 @@ export default function LetsTalkSection() {
 							<h3 className="text-white text-lg">
 								Contact Us
 							</h3>
-							<LinkButton text={"Hey SnailDesigns"} url={"mailto:work@snaildesigns.in"} isExternal={true} />
+							<LinkButton text={"work@snaildesigns.in"} url={"mailto:work@snaildesigns.in"} isExternal={true} />
 						</div>
 					</div>
 				</div>
