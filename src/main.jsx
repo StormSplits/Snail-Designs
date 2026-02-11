@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import { HelmetProvider } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 import Layout from "./components/Layout";
 import { initPolyfills } from "./utils/browserPolyfills";
 
@@ -80,5 +81,6 @@ const root = document.getElementById("root");
 ReactDOM.createRoot(root).render(
   <HelmetProvider>
     <RouterProvider router={router} />
+    <Analytics />
   </HelmetProvider>
 );
