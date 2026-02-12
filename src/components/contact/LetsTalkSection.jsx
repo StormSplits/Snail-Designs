@@ -33,6 +33,18 @@ export default function LetsTalkSection() {
 							<LinkButton text={"work@snaildesigns.in"} url={"mailto:work@snaildesigns.in"} isExternal={true} />
 						</div>
 					</div>
+
+					{/* Follow Us */}
+					{/* <div className="pt-4">
+						<h3 className="text-white text-lg mb-3">
+							Follow Us
+						</h3>
+						<div className="flex flex-wrap gap-4">
+							<LinkButton text={"Instagram"} url={"https://www.instagram.com/snaildesigns.in/"} isExternal={true} />
+							<LinkButton text={"Twitter / X"} url={"https://x.com/snail_designs"} isExternal={true} />
+							<LinkButton text={"LinkedIn"} url={"https://www.linkedin.com/company/snaildesigns/"} isExternal={true} />
+						</div>
+					</div> */}
 				</div>
 
 				{/* Right Image */}

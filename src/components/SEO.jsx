@@ -133,8 +133,8 @@ const SEO = ({
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:creator" content="@snaildesigns" />
-      <meta name="twitter:site" content="@snaildesigns" />
+      <meta name="twitter:creator" content="@snail_designs" />
+      <meta name="twitter:site" content="@snail_designs" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={url} />

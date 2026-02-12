@@ -1,5 +1,5 @@
 // Footer.tsx
-import { SiLetterboxd, SiLinkedin } from "react-icons/si";
+import { SiLinkedin, SiInstagram, SiX } from "react-icons/si";
 import { Link } from "react-router";
 import { MdEmail } from "react-icons/md";
 
@@ -55,7 +55,7 @@ export default function Footer() {
 							Say hello
 						</h3>
 						<div className="mt-6 space-y-4">
-							<ul className="space-y-2">
+							<ul className="space-y-4">
 								<li>
 									<a
 										href="mailto:work@snaildesigns.in"
@@ -70,7 +70,35 @@ export default function Footer() {
 								</li>
 								<li>
 									<a
-										href="https://www.linkedin.com/company/108555705"
+										href="https://www.instagram.com/snaildesigns.in/"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="flex gap-4 items-center group transition-colors duration-300 hover:text-purple-300"
+									>
+										<SiInstagram className="size-7 ms-1" />
+										<span className="relative">
+											Instagram
+											<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-300 group-hover:w-full transition-all duration-300"></span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://x.com/snail_designs"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="flex gap-4 items-center group transition-colors duration-300 hover:text-purple-300"
+									>
+										<SiX className="size-7 ms-1" />
+										<span className="relative">
+											Twitter / X
+											<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-300 group-hover:w-full transition-all duration-300"></span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.linkedin.com/company/snaildesigns/"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="flex gap-4 items-center group transition-colors duration-300 hover:text-purple-300"
