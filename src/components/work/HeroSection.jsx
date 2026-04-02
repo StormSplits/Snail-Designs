@@ -25,14 +25,14 @@ export const projects = [
 	},
 	{
 		id: 2,
-		title: "Cymasonic Labs",
+		title: "NovaPulse Labs",
 		category: "websites",
 		description:
-			"The demo focuses on improving UI/UX clarity, accessibility, and visual hierarchy, while preserving Cymasonic Labs’ research-first and non-promotional tone.",
+			"The demo focuses on improving UI/UX clarity, accessibility, and visual hierarchy, while preserving NovaPulse Labs’ research-first and non-promotional tone.",
 		image: "/Project Screenshots/cymasonic.png",
 		tags: ["UI/UX", "Development", "AI", "Demo"],
 		layout: "half",
-		link: "https://cymasonic-labs-demo.vercel.app/",
+		link: "https://novapulselabs.vercel.app/",
 	},
 	{
 		id: 3,
